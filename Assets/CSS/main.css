@@ -1,0 +1,195 @@
+/* ==================================================
+   Basic Styles
+================================================== */
+/*Set Page margins to 0*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', sans-serif;
+}
+/* ==================================================
+   Navigation
+================================================== */
+
+header {
+	background-color: #fffffe;
+	width: 100%;
+	height: 55px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 4px solid #000000;
+	z-index: 100;
+}
+
+#logo {
+	background: url(/Assets/Images/logo-smal-dark.png) no-repeat center;
+	width: 192px;
+	height: 45px;
+	margin: 5px 0px 5px 4vw;
+	float: left;
+	display: block;
+}
+
+nav {
+	float: right;
+	margin: 0px 30px 0px 0px;
+}
+
+nav ul {
+	margin: 5px;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	background-color: blue;
+	height: 40px;
+	margin: 0px 5px 0px 0px;
+	padding: 5px 15px 0px 15px;
+	text-align: center;
+}
+
+nav a {
+	color: #454545;
+	text-decoration: none
+}
+
+nav a:hover {
+	color: #3b31af;
+}
+
+.current {
+	color: #ebeb43;
+}
+/* ===For Mobile=== */
+
+#mobile-menu-icon {
+	display: hidden;
+	width: 50px;
+	height: 50px;
+	background: #454345 url(/Assets/Images/Menu-Icon.png) center;
+}
+/* Media Queary for Mobile Nav*/
+
+@media only screen and (max-width: 640px) {
+	header {
+		position: absolute;
+	}
+	#mobile-menu-icon {
+		display: inline-block;
+	}
+	nav ul,
+	nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #ffffff;
+		right: 20px;
+		width: 100%;
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+	nav:hover ul {
+		display: block;
+	}
+}
+/* ==================================================
+Top Section Header
+================================================== */
+/*Back Ground Image*/
+
+html {
+	background: url(/Assets/Images/BGs/image01.JPG) no-repeat right center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: -10;
+}
+/*Faded BG Overlay*/
+
+.bg-overlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .5);
+	z-index: -5;
+}
+/*Set the top header section to full size of view screen*/
+
+.top-section {
+	height: 100vh;
+}
+
+.top-section-logo {
+	position: absolute;
+	top: 25vh;
+	right: 30vw;
+}
+
+.top-section-button {
+	position: absolute;
+	top: 70vh;
+	right: 30vw;
+}
+
+.top-section img {
+	width: 40vw;
+}
+/*Set UL to no bullet*/
+
+ul {
+	list-style: none;
+}
+/* ==================================================
+   Flex
+================================================== */
+/*set flex*/
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: stretch;
+}
+
+.parent {
+	height: 600px;
+}
+
+.child1 {
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	background-color: blue;
+	padding: 20px;
+	text-align: center;
+	min-width: 30%;
+	flex-grow: ;
+}
+
+.child2 {
+	max-width: 20%;
+	height: 100px;
+	margin: auto;
+	background-color: blue;
+	padding: 20px;
+	text-align: center;
+	min-width: 350px;
+	flex-grow: 1
+	/* ==================================================
+    Sections
+================================================== */
+
+	.sectionA {
+		background-color: red
+	}
