@@ -8,6 +8,11 @@ body {
 	padding: 0px;
 	font-family: 'Lato', sans-serif;
 }
+/*Set UL to no bullet*/
+
+ul {
+	list-style: none;
+}
 /* ==================================================
    Navigation
 ================================================== */
@@ -46,11 +51,11 @@ nav li {
 	display: inline-block;
 	float: left;
 	padding: 10px;
-	background-color: blue;
-	height: 40px;
 	margin: 0px 5px 0px 0px;
-	padding: 5px 15px 0px 15px;
 	text-align: center;
+	font-size: 140%;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 nav a {
@@ -59,23 +64,24 @@ nav a {
 }
 
 nav a:hover {
-	color: #3b31af;
+	color: #FEC532;
+	text-decoration: underline;
 }
 
 .current {
-	color: #ebeb43;
+	color: #FEC532;
 }
 /* ===For Mobile=== */
 
 #mobile-menu-icon {
 	display: hidden;
-	width: 50px;
-	height: 50px;
-	background: #454345 url(/Assets/Images/Menu-Icon.png) center;
+	width: 55px;
+	height: 55px;
+	background: #FEC532;
 }
 /* Media Queary for Mobile Nav*/
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1100px) {
 	header {
 		position: absolute;
 	}
@@ -86,15 +92,15 @@ nav a:hover {
 	nav:active ul {
 		display: none;
 		position: absolute;
-		padding: 20px;
 		background: #ffffff;
-		right: 20px;
-		width: 100%;
+		right: -50px;
+		top: 52px;
+		width: 100vw;
 	}
 	nav li {
 		text-align: center;
 		width: 100%;
-		padding: 10px 0;
+		padding: 10px;
 		margin: 0;
 	}
 	nav:hover ul {
@@ -120,7 +126,7 @@ html {
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(255, 255, 255, .5);
+	background-color: rgba(105, 100, 65, 0.31);
 	z-index: -5;
 }
 /*Set the top header section to full size of view screen*/
@@ -132,22 +138,22 @@ html {
 .top-section-logo {
 	position: absolute;
 	top: 25vh;
-	right: 30vw;
+	right: 20vw;
 }
 
 .top-section-button {
 	position: absolute;
 	top: 70vh;
-	right: 30vw;
+	right: 45vw;
+}
+
+.top-section-button i {
+	font-size: 20vw;
+	color: black;
 }
 
 .top-section img {
-	width: 40vw;
-}
-/*Set UL to no bullet*/
-
-ul {
-	list-style: none;
+	width: 60vw;
 }
 /* ==================================================
    Flex
@@ -186,10 +192,11 @@ ul {
 	text-align: center;
 	min-width: 350px;
 	flex-grow: 1
-	/* ==================================================
+}
+/* ==================================================
     Sections
 ================================================== */
 
-	.sectionA {
-		background-color: red
-	}
+.sectionA {
+	background-color: #fff;
+}
